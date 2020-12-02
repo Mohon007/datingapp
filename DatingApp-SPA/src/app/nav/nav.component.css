@@ -1,0 +1,15 @@
+.dropdown-toggle,
+.dropdown-item {
+  cursor: pointer;
+}
+
+.nav-back {
+  margin-bottom: 60px;
+  position: relative;
+}
+img{
+  max-height: 50px;
+  border-radius: 30%;
+  border:2px solid white;
+  display: inline;
+}
