@@ -1,0 +1,7 @@
+<app-test-transferone [getText]="text"></app-test-transferone>
+<app-test-transfertwo></app-test-transfertwo>
+<form (ngSubmit)="onSubmit()" #f>
+    <input type="text" name="val1" ngModel placeholder="please Input Text1">
+    <input type="text" name="val2" ngModel placeholder="Please Input text2">
+    <button type="submit">Submite</button>
+</form>

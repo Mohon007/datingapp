@@ -5,6 +5,7 @@ import { MemberDetailComponent } from "./members/member-detail/member-detail.com
 import { MemberEditComponent } from "./members/member-edit/member-edit.component";
 import { MemberListComponent } from "./members/member-list/member-list.component";
 import { MessagesComponent } from "./messages/messages.component";
+import { TestComponent } from './test/test.component';
 import { AuthGuard } from "./_guards/auth.guard";
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { ListsResolver } from './_resolver/lists.resolver';
@@ -37,6 +38,7 @@ export const appRoutes: Routes = [
       },
       { path: "messages", component: MessagesComponent, resolve: { messages: MessagesResolver } },
       { path: "lists", component: ListsComponent, resolve: { users: ListsResolver } },
+      { path: "test", component: TestComponent },
     ],
   },
 

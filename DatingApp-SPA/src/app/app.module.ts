@@ -34,6 +34,9 @@ import { TimeAgoPipe } from 'time-ago-pipe';
 import { ListsResolver } from './_resolver/lists.resolver';
 import { MessagesResolver } from './_resolver/messages.resolver';
 import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
+import { TestComponent } from './test/test.component';
+import { TestTransferoneComponent } from './test/test-transferone/test-transferone.component';
+import { TestTransfertwoComponent } from './test/test-transfertwo/test-transfertwo.component';
 
 export function tokenGetter() {
   return localStorage.getItem("token");
@@ -58,8 +61,10 @@ export class CustomHammerConfig extends HammerGestureConfig {
     MemberEditComponent,
     PhotoEditorComponent,
     TimeAgoPipe,
-    MemberMessagesComponent
-
+    MemberMessagesComponent,
+    TestComponent,
+    TestTransferoneComponent,
+    TestTransfertwoComponent
   ],
   imports: [
     BrowserModule,
